@@ -20,7 +20,7 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage });
 
-router.post("/createProfile", upload.single('file'), verifyToken, HandleAsyncError(handleProfile));
-router.post("/updateProfile", upload.single('file'), verifyToken, HandleAsyncError(handleProfile));
+router.post("/createProfile", upload.single('profileImage'), verifyToken, HandleAsyncError(handleProfile));
+router.post("/updateProfile", upload.single('profileImage'), verifyToken, HandleAsyncError(handleProfile));
 
 export default router;

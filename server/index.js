@@ -13,7 +13,7 @@ import userRoutes from "./src/routes/userRoutes.js";
 //#region CONFIGURATIONS
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6000;
 app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(credentials);
